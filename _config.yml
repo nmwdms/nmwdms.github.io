@@ -121,7 +121,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                       "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/rem/model.json",
                       "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/HyperdimensionNeptunia/blanc_classic/index.json",
                       "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/HyperdimensionNeptunia/noir_santa/index.json",
-                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/dollsfrontline/dsr50_1801/normal/model.json",
+                      "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/HyperdimensionNeptunia/noireswim/index.json",
                       "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/dollsfrontline/dsr50_2101/normal/model.json",
                       "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/dollsfrontline/golden/model1.json",
                       "https:\/\/cdn.jsdelivr.net/gh/imuncle/live2d/model/dollsfrontline/kp31_3101/destroy/model.json",
