@@ -1,9 +1,8 @@
 ---
-title: 理解Python的主函数入口————if __name__ == __'main'__ 
+title: （Python初探）理解Python的主函数入口————if __name__ == __'main'__ 
 tags: 学习新知识
 ---
 
-## 理解Python的主函数入口————if __name__ == __'main'__
 近期在看很多python程序的时候，发现很多主函数的第一行都用到了 `if __name__ == __'main'__`，习惯了C和C++直接定义主函数的写法，一下子这样做的原理，于是想做个记录。
 
 进入正题：
