@@ -1,5 +1,5 @@
 ---
-title: （Python初探）python脚本开头两行程序#的作用
+title: （Python初探）python脚本开头两行程序#!/usr/bin/env python的作用
 tags: 学习新知识
 ---
 
