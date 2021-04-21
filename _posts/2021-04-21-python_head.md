@@ -3,7 +3,6 @@ title: （python初探）Python脚本开头两行：`#!/usr/bin/env python`和`#
 tags: 学习新知识
 ---
 
-## Python脚本开头两行：#!/usr/bin/env python和# -*- coding: utf-8 -*-的作用
 很多Python程序的开头两行会出现以下程序：
 ```bash
 #!/usr/bin/env python
