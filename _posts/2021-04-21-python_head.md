@@ -1,5 +1,5 @@
 ---
-title: （python初探）Python脚本开头两行：`#!/usr/bin/env python`和`# -*- coding: utf-8 -*-`的作用
+title: （python初探）Python脚本开头两行：#!/usr/bin/env python和# -*- coding: utf-8 -*-的作用
 tags: 学习新知识
 ---
 
