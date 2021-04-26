@@ -170,7 +170,7 @@ defaults: # 将所有配置选项使用<https://jekyllrb.com/docs/configuration/
                 h4,
                 h5,
                 h6 {
-                  font-family: "Courier New", "Courier", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft JhengHei", "Microsoft YaHei", monospace;
+                  font-family: 'Noto Sans SC', sans-serif;
                 }
               </style>
             - | # 网页标题使用加粗字号
