@@ -3,7 +3,9 @@ title: （python初探）python发送纯文本邮件
 tags: 学习新知识
 ---
 要使用python发送邮件，要使用到两个模块，分别是stmplib和email，两者都是python自带的。
+
 stmp模块主要负责发送邮件，包括连接服务器、登录、发送等操作。
+
 email模块主要用于构造邮件，指邮件中的一些信息，如发件人、收件人、邮件内容等。
 
 **1.stmp模块**
@@ -23,11 +25,13 @@ smtp.quit() #退出
 **2.email模块**
 
 email模块下有mime包，全称“Multipurpose Internet Mail Extensions”，即多用途互联网邮件拓展，是目前互联网电子邮件普遍遵循的邮件技术规范。
+
 要发送给纯文本邮件，需要导入mime包下的text模块，即：
 ```bash
 from email.mime.text import MIMEText
 ```
 当然mime下还有其他模块，如image模块用于发送图片，multpart模块表示多个对象的组合。
+
 text模块的使用方法如下：
 ```bash
 message = MIMEText('content','plain','utf-8') #设置邮件内容
@@ -36,6 +40,7 @@ message['From'] = sender #设置邮件发送方信息
 message['To'] = receivers[0] #设置邮件接收方信息
 ```
 `MIMEText('content','plain','utf-8')`中`content`表示正文内容，`plain`表示mime的subtype，这里`plain`表示纯文本，还可以选择`html`；`utf-8`表示编码方式。
+
 `receivers[0]`表示单个接收邮箱，也可以改为多个，用`[]`包裹，每个邮箱间用逗号连接。
 
 发送纯文本邮件的实例程序如下：
@@ -87,16 +92,18 @@ except smtplib.SMTPException as e:
     print('error',e)
 ```
 注意：
+
 1.在发送邮件前，要先开启自己邮箱的stmp功能，具体方法可在网上搜索
-2.设置登录密码时使用的密码并不是用户密码，而是在开启邮箱stmp功能后给到的授权码
-3.某些邮箱如qq邮箱需要SSL认证，stmp不能满足要求，需要使用stmp_ssl，所以在向此类邮箱发送邮件时可进行如下改动：
+2.
+3.设置登录密码时使用的密码并不是用户密码，而是在开启邮箱stmp功能后给到的授权码
+4.
+5.某些邮箱如qq邮箱需要SSL认证，stmp不能满足要求，需要使用stmp_ssl，所以在向此类邮箱发送邮件时可进行如下改动：
 ```bash
 smtpObj = smtplib.SMTP()
 smtpObj.connect(mail_host,25)
 #######替换为########
 smtpObj = smtplib.SMTP_SSL(mail_host)
 ```
-
 
 参考：
 - [简单三步，用 Python 发邮件](https://zhuanlan.zhihu.com/p/24180606)
