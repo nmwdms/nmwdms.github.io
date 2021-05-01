@@ -94,10 +94,10 @@ except smtplib.SMTPException as e:
 注意：
 
 1.在发送邮件前，要先开启自己邮箱的stmp功能，具体方法可在网上搜索
-2.
-3.设置登录密码时使用的密码并不是用户密码，而是在开启邮箱stmp功能后给到的授权码
-4.
-5.某些邮箱如qq邮箱需要SSL认证，stmp不能满足要求，需要使用stmp_ssl，所以在向此类邮箱发送邮件时可进行如下改动：
+
+2.设置登录密码时使用的密码并不是用户密码，而是在开启邮箱stmp功能后给到的授权码
+
+3.某些邮箱如qq邮箱需要SSL认证，stmp不能满足要求，需要使用stmp_ssl，所以在向此类邮箱发送邮件时可进行如下改动：
 ```bash
 smtpObj = smtplib.SMTP()
 smtpObj.connect(mail_host,25)
