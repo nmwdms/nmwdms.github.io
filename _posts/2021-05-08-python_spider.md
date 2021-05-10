@@ -34,7 +34,7 @@ tags: 学习新知识
 ？后面那些参数就是GET的请求参数，这些参数以键值对的形式实现，如`wd=%E8%8E%B1%E6%9C%88%E6%98%B4`就表示要搜索`莱月昴`相关内容，直接在浏览器中输入网址`https://www.baidu.com/s?wd=莱月昴`结果是一样的
 
 POST请求通常用在需要进行信息提交的时候，如注册、登录。以登录百度为例，当我们在输入完账号密码点击登录后，浏览器会请求login接口，请求方法为POST。
-![baidu_login.png](https://i.loli.net/2021/05/10/DRN7QUvWzwFTlPe.png)
+![baidu_login.png](https://i.loli.net/2021/05/10/k913oUaAgIh4VJ8.png)
 ![baidu_login_request.png](https://i.loli.net/2021/05/10/rTIvp7alSXM6CW3.png)
 
 接下来说请求头，浏览器在进行HTTP请求时，出了提交参数，还会包含一些如Accept、Host、cookie、User-Agent的头部信息，我们可以通过在爬虫中添加这些信息假装正规请求欺骗服务器
