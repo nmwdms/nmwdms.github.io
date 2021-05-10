@@ -31,6 +31,7 @@ print(response.read().decode('utf-8'))
 
 执行后结果如下图所示，可以看到我们已经获得了百度首页的源码~
 ![urllib_reponse.png](https://i.loli.net/2021/05/10/8GHhq7o9ATFw1nu.png)
+
 代码中的urlopen方法具体使用方法为
 ```bash
 urllib.request.urlopen(url, data=None, [timeout, ]*)
@@ -44,6 +45,7 @@ urllib.request.Request(url, data=None, headers={}, method=None)
 除了`url`和`data`，还可以设置请求头信息`headers`；此外还可以设置请求方式`method`，urlopen只能使用GET和POST方式，而Request可以设置我们自己的请求方式。
 比如我们想要获取B站首页的源码，如果直接使用urlopen方式，会获得如下结果：
 ![urlopen_bilibili.png](https://i.loli.net/2021/05/10/4un2dLvGFUto6rs.png)
+
 我们加上Request方法
 ```bash
 #导入request模块
@@ -85,6 +87,7 @@ print(response.text)
 ```
 结果如下：
 ![Requests_baidu.png](https://i.loli.net/2021/05/10/AI4GehOnci8VN7J.png)
+
 但我们可以发现，现在得到的结果与先前使用urllib得到的结果相比，少了很多内容，这里需要我们伪装成浏览器访问才能获得相同的结果，于是可将代码改为如下形式：
 ```bash
 #导入requests模块
