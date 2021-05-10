@@ -1,5 +1,5 @@
 ---
-title: （python初探）python爬虫基础————爬取百度首页的图片并保存到本地（一）
+title: （python初探）python爬虫基础——爬取百度首页的图片并保存到本地（一）
 tags: 学习新知识
 ---
 
