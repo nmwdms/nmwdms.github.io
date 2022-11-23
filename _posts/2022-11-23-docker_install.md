@@ -13,11 +13,13 @@ tags: 学习新知识
 
 **2.遇到的问题**
 
-***1.WSL 2安装失败***
+***a.WSL 2安装失败***
+
 参考如下链接进行手动安装即可
 - [下载 Linux 内核更新包](https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
 
-***2.Failed to set version to docker-desktop: exit code: -1***
+***b.Failed to set version to docker-desktop: exit code: -1***
+
 需要下载NoLsp.exe，并用管理员身份运行cmd，指令如下
 
 NoLsp.exe c:\windows\system32\wsl.exe
